@@ -1,0 +1,4 @@
+build
+.secrets
+*-key.txt
+*password.txt

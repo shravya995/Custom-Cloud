@@ -1,0 +1,16 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.49.2:31112
+functions:
+  custom-cloud:
+    lang: python3-debian
+    handler: ./custom-cloud
+    image: kaustubhharapanahalli/custom-cloud:latest
+    secrets:
+        - openfaas-aws-access-key
+        - openfaas-aws-secret-key
+    environment:
+      dynamodb_region: us-east-1
+      dynamodb_table: CSE546-student-database
+
