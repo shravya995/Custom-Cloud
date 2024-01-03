@@ -1,1 +1,1 @@
-
+Integrating OpenFaas, Ceph, and AWS for classroom video recognition. Ceph stores videos triggering OpenFaas for facial recognition, with results stored in CSV. The hybrid cloud ensures speed, security, and scalability, utilizing AWS DynamoDB for data management, providing an efficient solution for student identification in videos.
